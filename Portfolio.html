@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+
+        .portfolio{
+    padding:80px 10%;
+    background: #f5f7ff;
+}
+
+.portfolio-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color: black;
+}
+
+.portfolio-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.portfolio-box{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.portfolio-box img{
+    width:100%;
+    display:block;
+    transition:0.4s;
+}
+
+.portfolio-layer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(79,108,255,0.8);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    opacity:0;
+    transition:0.4s;
+    padding:20px;
+}
+
+.portfolio-box:hover img{
+    transform:scale(1.1);
+}
+
+.portfolio-box:hover .portfolio-layer{
+    opacity:1;
+}
+    </style>
+</head>
+<body>
+    <section class="portfolio" id="portfolio">
+    <h2 class="portfolio-title">My Portfolio</h2>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+            <img src="portfolio.png" alt="Project 1">
+            <div class="portfolio-layer">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website created using HTML and CSS.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="Landing_page.jpg" alt="Project 2">
+            <div class="portfolio-layer">
+                <h3>Landing Page</h3>
+                <p>A modern landing page design with responsive layout.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="c_projects.jpg" alt="Project 3">
+            <div class="portfolio-layer">
+                <h3>C Programming Project</h3>
+                <p>A simple program created using C language.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="layout.png" alt="Project 4">
+            <div class="portfolio-layer">
+                <h3>Web Layout Design</h3>
+                <p>Creative website layout using HTML and CSS.</p>
+            </div>
+        </div>
+
+      <div class="portfolio-box">
+            <img src="python_projects.jpg" alt="Project 5">
+            <div class="portfolio-layer">
+                <h3>Python Projets</h3>
+                <p>Creative Games and websites using python.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

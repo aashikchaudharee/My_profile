@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .skills{
+    padding:80px 10%;
+    background:#050924;
+}
+
+.skills-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color: white;
+}
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill p{
+    margin-bottom:8px;
+    font-weight:bold;
+    color: aliceblue;
+}
+
+.progress-bar{
+    width:100%;
+    background:#eee;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:20px;
+    line-height:20px;
+    color:white;
+    text-align:right;
+    padding-right:10px;
+    border-radius:20px;
+    animation:load 2s ease-in-out;
+}
+
+.html{
+    width:90%;
+    background:#e34c26;
+}
+
+.css{
+    width:80%;
+    background:#264de4;
+}
+
+.c{
+    width:30%;
+    background:#555;
+}
+
+.js{
+    width:75%;
+    background:#f7df1e;
+    color:black;
+}
+
+.python{
+    width: 55%;
+    background:greenyellow ;
+    color: black;
+
+}
+@keyframes load{
+    from{
+        width:0;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="skills">
+    <h2 class="skills-title">My Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar">
+            <div class="progress html">90%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar">
+            <div class="progress css">80%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>C Programming</p>
+        <div class="progress-bar">
+            <div class="progress c">30%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress-bar">
+            <div class="progress js">75%</div>
+        </div>
+    </div>
+
+     <div class="skill">
+        <p>Python</p>
+        <div class="progress-bar">
+            <div class="progress python">55%</div>
+        </div>
+    </div>
+
+
+</section>
+    
+</body>
+</html>

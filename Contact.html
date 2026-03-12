@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            background-color: #05093d;
+            
+        }
+        
+        h1{
+            font: size 60px;
+            font-display: swap;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 50px;
+            left: 530px;
+        }
+        p{
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 150px;
+            left: 280px;
+        }
+        .box{
+            border-radius: 5px;
+            background-color: aliceblue;
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            top: 220px;
+            left: 350px;
+        }
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .contact-form input, .contact-form textarea{
+            margin-bottom: 20px;
+            padding: 16px;
+            border: 2px solid darkblue;
+            border-radius: 5px;
+        }
+        .contact-form button{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(223, 20, 142);
+            color: white; 
+            font-weight: bold;
+            position: absolute;
+            top: 245px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        body ul{
+            position: absolute;
+            top: 520px;
+            left: 480px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+   <!-- Contact Information -->
+    <section id="contact">
+        <h1 class="section-title">Contact Us</h1>
+         <p>If you have any questions or would like to get in touch,
+             please feel free to contact us at :-</p>
+
+<div class="box">
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+</div>
+    </section>
+    </center>
+
+    <ul>
+        <li>Email: aashikchaudharee@gmail.com</li>
+        <li>Phone: +977 9816842081</li>
+        <li>Address: Kathmandu, Nepal</li>
+    </ul>
+</body>
+</html>

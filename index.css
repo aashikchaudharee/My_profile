@@ -1,0 +1,127 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #05093d;
+}
+.container{
+  display: grid;
+  grid-template-rows: 80px auto 1fr auto 50px;
+  grid-template-rows: 1fr 4fr 1fr;
+  height: 100vh;
+  grid-template-areas:
+    "header         headeer         header"
+    "left-aside     banner          right-aside"
+    "left-aside     main            right-aside"
+    "left-aside     low-content     right-aside"
+    "footer         footer          footer";
+    grid-gap: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+@media (max-width: 678px){
+  .container{
+    grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "banner""
+      "left-aside"
+      "main"
+      "right-aside"
+      "low-content"
+      "footer"
+    }
+}
+header {
+  display: flex;
+  justify-content: space-between; /* pushes items apart */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(60, 74, 227);
+}
+header span{
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+nav{
+  display:flex;
+  justify-content:flex-end;
+}
+
+nav a{
+  margin-right:20px;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  overflow: scroll;
+}
+img{
+height:300px;
+border-radius:50%;
+border:5px solid #38bdf8;
+box-shadow:0 0 25px rgba(56,189,248,0.5);
+position: absolute;
+ margin-left: 950px;
+top: 150px;
+}
+h1{
+  font-size: 48px;
+  position: absolute;
+  left: 50px;
+  top: 120px;
+}
+
+.hero-text span{
+color:#38bdf8;
+
+}
+
+.hero-text{
+margin:20px 0;
+color:#e7e7e7;
+line-height:1.6;
+
+}
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+}
+
+.hero img{
+width:300px;
+border-radius:50%;
+border:5px solid #38bdf8;
+box-shadow:0 0 25px rgba(56,189,248,0.5);
+}
+.Box{
+    border: 5px solid rgb(255, 255, 255);
+    width: 700px;
+    height: 130px;
+    padding: 15px;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+   
+    border-radius: 10px;
+    background: rgb(131, 29, 209);
+    color: white;
+}
+p{
+  font-size: 20px;
+}
+div a{
+  position: absolute;
+  left: 50px;
+  top: 470px;
+}
